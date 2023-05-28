@@ -4,6 +4,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 import LocationOnIcon from "@material-ui/icons/LocationOn";
 import { Link } from "react-router-dom";
+import logo from "./assets/logo.jpeg";
 
 const Div = styled.div`
   color: blue;
@@ -14,7 +15,9 @@ const Div = styled.div`
 `;
 const Conntainer = styled.div`
   height: 60px;
-  background-color: #0f1111;
+  /* background-color: #0f1111;
+   */
+  background-color: #000;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -109,11 +112,7 @@ function Header({ cartItems, user, signOut }) {
     <Conntainer>
       <HeaderLogo>
         <Link to="/">
-          <img
-            src={
-              "https://mikekitko.com/wp-content/uploads/2019/10/amazon-logo-white-768x232.png"
-            }
-          />
+          <img alt="logo" src={logo} />
         </Link>
       </HeaderLogo>
       <HeaderOptionAddress>

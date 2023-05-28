@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { auth, db, providor } from "./firebase";
+import logo from "./assets/logo.jpeg";
 
 function Login({ setUser }) {
   const signIn = () => {
@@ -23,8 +24,8 @@ function Login({ setUser }) {
   return (
     <Container>
       <Content>
-        <AmazonLog src="http://media.corporate-ir.net/media_files/IROL/17/176060/Oct18/Amazon%20logo.PNG" />
-        <h1>sign into Amzon</h1>
+        <AmazonLog src={logo} />
+        <h1>sign into local store</h1>
         <LoginButton onClick={signIn}>sign in with google</LoginButton>
       </Content>
     </Container>

@@ -17,7 +17,7 @@ function Home() {
     });
   };
   React.useEffect(() => {
-    console.log("ila xafti hadxi xoj marat rak hmar hhh");
+    console.log("ila xafti hadxi xoj marat that's bad hhh");
     getProducts();
   }, []);
 
@@ -48,6 +48,7 @@ const Content = styled.div`
   margin-top: -350px;
   z-index: 100;
   display: flex;
+  flex-wrap: wrap;
 `;
 
 const Container = styled.div`
@@ -55,7 +56,8 @@ const Container = styled.div`
   margin: 0 auto;
 `;
 const Banner = styled.div`
-  background-image: url("https://i.imgur.com/SYHeuYM.jpg");
+  /* background-image: url("https://i.imgur.com/SYHeuYM.jpg"); */
+  background-color: orange;
   min-height: 600px;
   background-position: center;
   background-size: cover;
